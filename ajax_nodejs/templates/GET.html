@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax GET request</title>
+    <style>
+        #result {
+            width: 200px;
+            height: 100px;
+            border: solid 1px #90b;
+        }
+    </style>
+</head>
+<body>
+    <button>click to send request</button>
+    <div calss = 'try'>
+        <p id = 'result'></p>
+    </div>
+
+    <script>
+        const btn = document.getElementsByTagName('button')[0];
+        btn.onclick = function() {
+            //console.log('test');
+            const xhr = new XMLHttpRequest();
+            const result = document.getElementById('result');
+            xhr.open('GET', '/sayhello');
+            xhr.send();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        //console.log(xhr.status);
+                        //console.log(xhr.statusText);
+                        //console.log(xhr.getAllResponseHeaders());
+                        //console.log(xhr.response);
+
+                        result.innerHTML = xhr.response;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

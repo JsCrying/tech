@@ -1,0 +1,14 @@
+"""
+(.*?):(.*)
+"$1":"$2",
+"""
+
+"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+"Accept-Encoding":"gzip, deflate",
+"Accept-Language":"zh-CN,zh;q=0.9",
+"Cache-Control":"max-age=0",
+"Connection":"keep-alive",
+"Cookie":"ddscreen=2; dest_area=country_id%3D9000%26province_id%3D111%26city_id%20%3D0%26district_id%3D0%26town_id%3D0; __permanent_id=20210505164819616363853155952382710; __visit_id=20210505164819619368706834681754458; __out_refer=; __trace_id=20210505164819621274593890361828304",
+"Host":"bang.dangdang.com",
+"Upgrade-Insecure-Requests":"1",
+"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
